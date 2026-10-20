@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0F1B2D">
+  <meta name="description" content="Epsilon brings your spending, savings goals, investments and net worth into one clearer picture. Join the waitlist.">
+  <title>Epsilon — Every number tells a story</title>
+  <link rel="icon" href="assets/logo-placeholder.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="Epsilon home">
+      <img class="brand-mark" src="assets/logo-placeholder.svg" alt="">
+      <img class="brand-wordmark" src="assets/wordmark-placeholder.svg" alt="Epsilon">
+    </a>
+    <span class="status"><span class="status-dot"></span> In development</span>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> PERSONAL FINANCE, IN PERSPECTIVE</p>
+        <h1>Every number<br><em>tells a story.</em></h1>
+        <p class="lead">Your money is more than a list of transactions. Epsilon is being built to bring your spending, savings goals, investments and net worth into one clearer picture.</p>
+        <p class="supporting-line">Understand your money.</p>
+
+        <form class="waitlist-form" id="waitlist-form">
+          <div class="field">
+            <label for="email">Email address <span aria-hidden="true">*</span></label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="challenge">What’s your biggest money-management challenge? <span class="optional">Optional</span></label>
+            <select class="input" id="challenge" name="biggest_challenge">
+              <option value="">Choose one</option>
+              <option value="tracking-spending">Keeping track of spending</option>
+              <option value="controlling-spending">Understanding or controlling spending</option>
+              <option value="multiple-accounts">Managing multiple accounts or currencies</option>
+              <option value="saving-goals">Sticking to savings goals</option>
+              <option value="net-worth">Understanding my net worth</option>
+              <option value="investments">Tracking investments</option>
+              <option value="full-picture">Getting a complete picture of my finances</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="method">How do you track your money today? <span class="optional">Optional</span></label>
+            <select class="input" id="method" name="current_method">
+              <option value="">Choose one</option>
+              <option value="spreadsheet">Spreadsheet</option>
+              <option value="finance-app">Personal finance app</option>
+              <option value="bank-app">Bank app only</option>
+              <option value="notes">Notes app or notebook</option>
+              <option value="combination">A combination of tools</option>
+              <option value="no-system">I don’t use a system yet</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="early_access" value="yes">
+            <span>I’m interested in trying Epsilon early.</span>
+          </label>
+          <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+          <button class="button button-primary" id="submit-button" type="submit">
+            <span>Join the waitlist</span><span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="fine-print">We’ll use your email to share Epsilon updates and let you know when early access is available. No spam. You can unsubscribe at any time.</p>
+        </form>
+
+        <div class="success-panel" id="success-panel" hidden role="status" aria-live="polite">
+          <span class="success-icon" aria-hidden="true">✓</span>
+          <div><h2>You’re on the list.</h2><p>Thanks for your interest in Epsilon. We’ll be in touch when there’s news to share.</p></div>
+        </div>
+      </div>
+
+      <div class="visual-column" aria-label="Illustrative Epsilon finance dashboard preview">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="dashboard-card">
+          <div class="dashboard-top">
+            <div><span class="tiny-label">YOUR FINANCIAL OVERVIEW</span><p class="period">A clearer picture</p></div>
+            <span class="sparkle" aria-hidden="true">ε</span>
+          </div>
+          <div class="net-worth-block">
+            <span class="card-label">Net worth</span>
+            <div class="amount"><span class="currency">¤</span> 24,680<span class="decimal">.50</span></div>
+            <div class="trend"><span aria-hidden="true">↗</span> +4.8% <span class="trend-note">over the last 6 months</span></div>
+          </div>
+          <div class="chart-wrap">
+            <div class="chart-heading"><span>Net worth over time</span><span class="chart-period">6 months</span></div>
+            <svg class="chart" viewBox="0 0 440 130" role="img" aria-label="Illustrative upward-trending net worth chart">
+              <defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#B8935F" stop-opacity=".28"/><stop offset="100%" stop-color="#B8935F" stop-opacity="0"/></linearGradient></defs>
+              <path class="gridline" d="M0 25H440 M0 65H440 M0 105H440"/>
+              <path class="chart-area" d="M4 100 C42 96 54 80 91 86 S147 72 179 76 S234 48 267 57 S324 36 352 40 S398 15 436 18 L436 115 L4 115 Z"/>
+              <path class="chart-line" d="M4 100 C42 96 54 80 91 86 S147 72 179 76 S234 48 267 57 S324 36 352 40 S398 15 436 18"/>
+              <circle class="chart-point" cx="436" cy="18" r="5"/>
+              <g class="chart-labels"><text x="4" y="128">May</text><text x="144" y="128">Jul</text><text x="290" y="128">Sep</text><text x="436" y="128" text-anchor="end">Oct</text></g>
+            </svg>
+          </div>
+          <div class="preview-divider"></div>
+          <div class="breakdown-heading"><span>Spending snapshot</span><span class="muted">This month</span></div>
+          <div class="spend-row"><span class="spend-icon icon-gold">↗</span><div class="spend-main"><div class="spend-name">Everyday spending</div><div class="spend-track"><i class="bar-gold"></i></div></div><span class="spend-percent">54%</span></div>
+          <div class="spend-row"><span class="spend-icon icon-green">◇</span><div class="spend-main"><div class="spend-name">Savings goals</div><div class="spend-track"><i class="bar-green"></i></div></div><span class="spend-percent">28%</span></div>
+          <div class="spend-row"><span class="spend-icon icon-blue">↗</span><div class="spend-main"><div class="spend-name">Investments</div><div class="spend-track"><i class="bar-blue"></i></div></div><span class="spend-percent">18%</span></div>
+          <p class="sample-note">Illustrative preview · sample figures</p>
+        </div>
+        <div class="floating-note"><span class="floating-dot"></span><span>More context. Less guesswork.</span></div>
+      </div>
+    </section>
+
+    <section class="value-section">
+      <div class="wrap">
+        <div class="section-intro">
+          <p class="eyebrow">THE BIGGER PICTURE</p>
+          <h2>Know what’s happening<br>with your money.</h2>
+          <p>Designed to help you connect the dots between what comes in, what goes out, and what you’re building.</p>
+        </div>
+        <div class="value-grid">
+          <article class="value-item"><span class="value-index">01 / TRACK</span><div class="value-icon" aria-hidden="true">↘</div><h3>See where it goes</h3><p>Bring income and expenses into view so your spending habits are easier to understand.</p></article>
+          <article class="value-item"><span class="value-index">02 / PLAN</span><div class="value-icon" aria-hidden="true">◎</div><h3>Make room for goals</h3><p>Keep savings goals visible and see how today’s choices connect to what you want next.</p></article>
+          <article class="value-item"><span class="value-index">03 / UNDERSTAND</span><div class="value-icon" aria-hidden="true">⌁</div><h3>Follow the whole picture</h3><p>Connect accounts, investments and net worth to see more than individual transactions.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing wrap">
+      <div><p class="eyebrow">EARLY ACCESS</p><h2>Your money has a story.<br><em>Start understanding it.</em></h2></div>
+      <a class="button button-secondary" href="#email">Join the waitlist <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="footer-brand" href="#top"><img src="assets/logo-placeholder.svg" alt="" width="20" height="20"> Epsilon</a>
+      <p>In development. Dashboard preview uses illustrative sample data.</p>
+      <p class="footer-tagline">Every number tells a story.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
