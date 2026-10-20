@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0F1B2D">
   <meta name="description" content="Epsilon brings your spending, savings goals, investments and net worth into one clearer picture. Join the waitlist.">
-  <title>Epsilon — Every number tells a story</title>
-  <link rel="icon" href="assets/logo-placeholder.svg" type="image/svg+xml">
+  <title>Epsilon: Your finance, in perspective</title>
+  <link rel="icon" href="assets/icon-dark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header wrap">
     <a class="brand" href="#top" aria-label="Epsilon home">
-      <img class="brand-mark" src="assets/logo-placeholder.svg" alt="">
-      <img class="brand-wordmark" src="assets/wordmark-placeholder.svg" alt="Epsilon">
+      <img class="brand-wordmark" src="assets/wordmark-dark.svg" alt="Epsilon">
     </a>
     <span class="status"><span class="status-dot"></span> In development</span>
   </header>
@@ -58,6 +57,20 @@
               <option value="other">Other</option>
             </select>
           </div>
+          <fieldset class="field choice-group">
+            <legend>What would you most want Epsilon to help you do? <span class="optional">Optional</span></legend>
+            <div class="choice-list">
+              <label class="consent"><input type="checkbox" name="goals" value="understand-spending"><span>Understand where my money goes.</span></label>
+              <label class="consent"><input type="checkbox" name="goals" value="income-expenses"><span>Track my income and expenses in one place.</span></label>
+              <label class="consent"><input type="checkbox" name="goals" value="control-spending"><span>Control my spending and reduce impulse purchases.</span></label>
+              <label class="consent"><input type="checkbox" name="goals" value="savings-goals"><span>Set and achieve savings goals.</span></label>
+              <label class="consent"><input type="checkbox" name="goals" value="investments-net-worth"><span>Track my investments and net worth.</span></label>
+              <label class="consent"><input type="checkbox" name="goals" value="multi-currency"><span>Manage multiple accounts and currencies.</span></label>
+              <label class="consent"><input type="checkbox" name="goals" value="financial-position"><span>Understand my overall financial position.</span></label>
+              <label class="consent"><input type="checkbox" name="goals" value="financial-habits"><span>Build better financial habits.</span></label>
+              <label class="consent"><input type="checkbox" name="goals" value="other"><span>Other.</span></label>
+            </div>
+          </fieldset>
           <label class="consent">
             <input type="checkbox" name="early_access" value="yes">
             <span>I’m interested in trying Epsilon early.</span>
@@ -132,7 +145,7 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <a class="footer-brand" href="#top"><img src="assets/logo-placeholder.svg" alt="" width="20" height="20"> Epsilon</a>
+      <a class="footer-brand" href="#top"><img class="brand-wordmark" src="assets/wordmark-dark.svg" alt="Epsilon" alt="" width="20" height="20"></a>
       <p>In development. Dashboard preview uses illustrative sample data.</p>
       <p class="footer-tagline">Every number tells a story.</p>
     </div>

@@ -57,6 +57,9 @@ select.input { appearance: none; padding-right: 40px; background-image: url("dat
 select.input option { background: var(--bg-card); color: var(--text-bright); }
 .consent { display: flex; align-items: flex-start; gap: 10px; color: var(--text-muted); font-size: 12px; cursor: pointer; margin: 1px 0 0; }
 .consent input { accent-color: var(--accent-gold); width: 15px; height: 15px; margin: 2px 0 0; flex: 0 0 auto; }
+.choice-group { border: 0; padding: 0; margin: 0; min-width: 0; }
+.choice-group legend { padding: 0; margin-bottom: 10px; color: var(--text-secondary); font-size: 12px; font-weight: 500; }
+.choice-list { display: grid; gap: 11px; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 48px; border-radius: 6px; border: 1px solid transparent; padding: 12px 17px; text-decoration: none; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .18s, border-color .18s, transform .18s; }
 .button:hover { transform: translateY(-1px); }
 .button-primary { color: #171008; background: var(--accent-gold); border-color: var(--accent-gold); }
